@@ -177,8 +177,8 @@ int main(int argc, char *argv[])
 		return sdp_basic_runner_cmd_parser(argc-1, &argv[1]);
 #endif
 #ifdef CFG_PKCS11_TA
-	else if (argc == 2 && !strcmp(argv[1], "--pkcs11-1028-destroy-token-object"))
-		return xtest_pkcs11_1028_destroy_token_object();
+	// else if (argc == 2 && !strcmp(argv[1], "--pkcs11-1028-destroy-token-object"))
+	//  	return xtest_pkcs11_1028_destroy_token_object();
 #endif
 	else if (argc > 1 && !strcmp(argv[1], "--stats"))
 		return stats_runner_cmd_parser(argc - 1, &argv[1]);

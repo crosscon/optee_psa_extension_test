@@ -70,7 +70,8 @@ srcs += sdp_basic.c
 endif
 
 ifeq ($(CFG_PKCS11_TA),y)
-srcs += pkcs11_1000.c
+#currently excluded
+#srcs += pkcs11_1000.c
 LOCAL_CFLAGS += -DCFG_PKCS11_TA
 LOCAL_SHARED_LIBRARIES += libckteec
 endif
