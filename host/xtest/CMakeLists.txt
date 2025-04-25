@@ -108,7 +108,8 @@ endif()
 
 if (CFG_PKCS11_TA)
 	add_compile_options(-DCFG_PKCS11_TA)
-	list (APPEND SRC pkcs11_1000.c)
+#	currently excluded
+#	list (APPEND SRC pkcs11_1000.c)
 endif()
 
 if (CFG_CRYPTO_SE05X)
